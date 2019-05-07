@@ -9,6 +9,7 @@
 <center>
 	<img src="Images/traceroute_01.png" width="800">
 </center>
+
 >“Traceroute程序发送一份UDP数据报给目的主机，但它选择一个不可能的值作为UDP端口
 号（大于30 000），使目的主机的任何一个应用程序都不可能使用该端口。因为，当该数据报
 到达时，将使目的主机的UDP模块产生一份“端口不可达”错误的ICMP报文。
