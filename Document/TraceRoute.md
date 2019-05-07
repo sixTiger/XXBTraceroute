@@ -1,11 +1,11 @@
-#路由诊断
-###网络拓扑图
+# 路由诊断
+### 网络拓扑图
 <center>
 	<img src="Images/traceroute_00.png" width="800">
 </center>
 
 
-###路由诊断原理
+### 路由诊断原理
 <center>
 	<img src="Images/traceroute_01.png" width="800">
 </center>
@@ -20,7 +20,7 @@
 在windws主机里面的tracert和TCP/IP详解的表述有点出入。windows主机的tracert是直接是用ping来实现的，但是这个ping的TTL值在3个包后增大1，不可达或者超时后返回星号，继续下一个TTL的包的发送，一直到达默认设置的30跳。一般在路由器和交换机上的traceroute都是UDP的方式，每个TTL发的包的个数和最大跳数、UDP开始端口都是可以调整的。<br>
 >路由诊断的目的是为了知道从终端到服务器的链路个各个节点的信息
 
-###路由诊断示例
+### 路由诊断示例
 >下边是一个网络诊断的信息（使用的是MAC自带的 网络实用工具）
 
 ```c
@@ -38,10 +38,10 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 10  123.125.104.197 (123.125.104.197)  6.783 ms  3.683 ms  4.184 ms
 ```
 
-###路由诊断实现方案
+### 路由诊断实现方案
 >路由诊断有两种实现方案,一种是居于UDP方案实现的，一种是基于ICMP（Internet Control Message Protocol）实现的。
 
-###一、基于UDP包
+### 一、基于UDP包
 <center>
 	<img src="Images/traceroute_02.png" width="800">
 </center>
@@ -56,7 +56,7 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 
 缺点：因为安全问题大部分的应用服务器都不提供UDP服务（或者被防火墙挡掉），所以我们拿不到服务器的任何返回，程序就理所当然的认为还没有结束，一直尝试增加数据包的TTL,实际用起来并不能达到想要的效果.
 
-###二、基于ICMP协议
+### 二、基于ICMP协议
 <center>
 	<img src="Images/traceroute_04.png" width="800">
 </center>
@@ -68,7 +68,7 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 
 >
 
-###三参考资料
+### 三参考资料
 > [ipv4-ipv6header介绍](https://www.cisco.com/en/US/technologies/tk648/tk872/technologies_white_paper0900aecd8054d37d.html)<br>
 > [ICMP6简介](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6)<br>
 > [ICMP文档](https://tools.ietf.org/html/rfc2463)<br>
@@ -76,7 +76,7 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 
 
  
-###四、文档中实用的命令的命令
+### 四、文档中实用的命令的命令
 ```c
 traceroute weibo.com
 ```
