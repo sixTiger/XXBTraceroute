@@ -14,7 +14,7 @@
 什么时候结束。”
 中间的路由器是因为TTL=0以后返回ICMP 类型11，代码0的超时消息。
 目的IP到了以后，拆包分析UDP内容，发现端口不可达，返回ICMP类型3，代码3（目标端口不可达）实现。
-在windws主机里面的tracert和TCP/IP详解的表述有点出入。windows主机的tracert是直接是用ping来实现的，但是这个ping的TTL值在3个包后增大1，不可达或者超时后返回星号，继续下一个TTL的包的发送，一直到达默认设置的30跳。一般在路由器和交换机上的traceroute都是UDP的方式，每个TTL发的包的个数和最大跳数、UDP开始端口都是可以调整的。
+在windws主机里面的tracert和TCP/IP详解的表述有点出入。windows主机的tracert是直接是用ping来实现的，但是这个ping的TTL值在3个包后增大1，不可达或者超时后返回星号，继续下一个TTL的包的发送，一直到达默认设置的最大跳数。一般在路由器和交换机上的traceroute都是UDP的方式，每个TTL发的包的个数和最大跳数、UDP开始端口都是可以调整的。
 
 <center>
 	<img src="Images/traceroute_01.png" width="800">
@@ -73,7 +73,7 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 > [ipv4-ipv6header介绍](https://www.cisco.com/en/US/technologies/tk648/tk872/technologies_white_paper0900aecd8054d37d.html)<br>
 > [ICMP6简介](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6)<br>
 > [ICMP文档](https://tools.ietf.org/html/rfc2463)<br>
-> [LDNetDiagnoService](https://github.com/Lede-Inc/LDNetDiagnoService_IOS).
+> [LDNetDiagnoService](https://github.com/Lede-Inc/LDNetDiagnoService_IOS)<br>
 > [samplecode_SimplePing](https://developer.apple.com/library/archive/samplecode/SimplePing/Introduction/Intro.html)
 
 
