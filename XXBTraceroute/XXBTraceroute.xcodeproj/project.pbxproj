@@ -7,19 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780D9CFF2282703D00B07738 /* XXBTracerouteCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 780D9CFD2282703D00B07738 /* XXBTracerouteCommon.h */; };
+		780D9D002282703D00B07738 /* XXBTracerouteCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D9CFE2282703D00B07738 /* XXBTracerouteCommon.m */; };
+		780D9D032282735600B07738 /* XXBTracerouteAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 780D9D012282735600B07738 /* XXBTracerouteAddress.h */; };
+		780D9D042282735600B07738 /* XXBTracerouteAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D9D022282735600B07738 /* XXBTracerouteAddress.m */; };
 		7810540B2265DD370050B3C9 /* XXBTraceroute.h in Headers */ = {isa = PBXBuildFile; fileRef = 781054092265DD370050B3C9 /* XXBTraceroute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		781054342265F0F60050B3C9 /* XXBTraceroute.m in Sources */ = {isa = PBXBuildFile; fileRef = 781054332265F0F60050B3C9 /* XXBTraceroute.m */; };
-		78DDE94D22674580008CDE7E /* XXBTraceRouteQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DDE94B22674580008CDE7E /* XXBTraceRouteQueue.h */; };
+		7847F0302281708E00D0BA72 /* XXBTracerouteRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 7847F02E2281708E00D0BA72 /* XXBTracerouteRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7847F0312281708E00D0BA72 /* XXBTracerouteRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7847F02F2281708E00D0BA72 /* XXBTracerouteRecord.m */; };
+		7847F034228173A300D0BA72 /* XXBTracerouteContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 7847F032228173A300D0BA72 /* XXBTracerouteContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7847F035228173A300D0BA72 /* XXBTracerouteContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7847F033228173A300D0BA72 /* XXBTracerouteContext.m */; };
+		7847F03822817F9C00D0BA72 /* XXBTracerouteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7847F03622817F9B00D0BA72 /* XXBTracerouteProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78DDE94D22674580008CDE7E /* XXBTraceRouteQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DDE94B22674580008CDE7E /* XXBTraceRouteQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78DDE94E22674580008CDE7E /* XXBTraceRouteQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDE94C22674580008CDE7E /* XXBTraceRouteQueue.m */; };
-		78DDE9512267564D008CDE7E /* XXBTracerouteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DDE94F2267564D008CDE7E /* XXBTracerouteUtil.h */; };
+		78DDE9512267564D008CDE7E /* XXBTracerouteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 78DDE94F2267564D008CDE7E /* XXBTracerouteUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78DDE9522267564D008CDE7E /* XXBTracerouteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78DDE9502267564D008CDE7E /* XXBTracerouteUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780D9CFD2282703D00B07738 /* XXBTracerouteCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteCommon.h; sourceTree = "<group>"; };
+		780D9CFE2282703D00B07738 /* XXBTracerouteCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTracerouteCommon.m; sourceTree = "<group>"; };
+		780D9D012282735600B07738 /* XXBTracerouteAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteAddress.h; sourceTree = "<group>"; };
+		780D9D022282735600B07738 /* XXBTracerouteAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTracerouteAddress.m; sourceTree = "<group>"; };
 		781054062265DD370050B3C9 /* XXBTraceroute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XXBTraceroute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		781054092265DD370050B3C9 /* XXBTraceroute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTraceroute.h; sourceTree = "<group>"; };
 		7810540A2265DD370050B3C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		781054332265F0F60050B3C9 /* XXBTraceroute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTraceroute.m; sourceTree = "<group>"; };
+		7847F02E2281708E00D0BA72 /* XXBTracerouteRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteRecord.h; sourceTree = "<group>"; };
+		7847F02F2281708E00D0BA72 /* XXBTracerouteRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTracerouteRecord.m; sourceTree = "<group>"; };
+		7847F032228173A300D0BA72 /* XXBTracerouteContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteContext.h; sourceTree = "<group>"; };
+		7847F033228173A300D0BA72 /* XXBTracerouteContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTracerouteContext.m; sourceTree = "<group>"; };
+		7847F03622817F9B00D0BA72 /* XXBTracerouteProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteProtocol.h; sourceTree = "<group>"; };
 		78DDE94B22674580008CDE7E /* XXBTraceRouteQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTraceRouteQueue.h; sourceTree = "<group>"; };
 		78DDE94C22674580008CDE7E /* XXBTraceRouteQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXBTraceRouteQueue.m; sourceTree = "<group>"; };
 		78DDE94F2267564D008CDE7E /* XXBTracerouteUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XXBTracerouteUtil.h; sourceTree = "<group>"; };
@@ -71,6 +89,15 @@
 				78DDE94C22674580008CDE7E /* XXBTraceRouteQueue.m */,
 				78DDE94F2267564D008CDE7E /* XXBTracerouteUtil.h */,
 				78DDE9502267564D008CDE7E /* XXBTracerouteUtil.m */,
+				7847F02E2281708E00D0BA72 /* XXBTracerouteRecord.h */,
+				7847F02F2281708E00D0BA72 /* XXBTracerouteRecord.m */,
+				7847F032228173A300D0BA72 /* XXBTracerouteContext.h */,
+				7847F033228173A300D0BA72 /* XXBTracerouteContext.m */,
+				7847F03622817F9B00D0BA72 /* XXBTracerouteProtocol.h */,
+				780D9CFD2282703D00B07738 /* XXBTracerouteCommon.h */,
+				780D9CFE2282703D00B07738 /* XXBTracerouteCommon.m */,
+				780D9D012282735600B07738 /* XXBTracerouteAddress.h */,
+				780D9D022282735600B07738 /* XXBTracerouteAddress.m */,
 			);
 			path = XXBTraceroute;
 			sourceTree = "<group>";
@@ -83,7 +110,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DDE9512267564D008CDE7E /* XXBTracerouteUtil.h in Headers */,
+				7847F034228173A300D0BA72 /* XXBTracerouteContext.h in Headers */,
+				780D9D032282735600B07738 /* XXBTracerouteAddress.h in Headers */,
 				7810540B2265DD370050B3C9 /* XXBTraceroute.h in Headers */,
+				7847F03822817F9C00D0BA72 /* XXBTracerouteProtocol.h in Headers */,
+				7847F0302281708E00D0BA72 /* XXBTracerouteRecord.h in Headers */,
+				780D9CFF2282703D00B07738 /* XXBTracerouteCommon.h in Headers */,
 				78DDE94D22674580008CDE7E /* XXBTraceRouteQueue.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,8 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78DDE9522267564D008CDE7E /* XXBTracerouteUtil.m in Sources */,
+				7847F035228173A300D0BA72 /* XXBTracerouteContext.m in Sources */,
 				78DDE94E22674580008CDE7E /* XXBTraceRouteQueue.m in Sources */,
 				781054342265F0F60050B3C9 /* XXBTraceroute.m in Sources */,
+				7847F0312281708E00D0BA72 /* XXBTracerouteRecord.m in Sources */,
+				780D9D042282735600B07738 /* XXBTracerouteAddress.m in Sources */,
+				780D9D002282703D00B07738 /* XXBTracerouteCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +321,10 @@
 		7810540F2265DD370050B3C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XVTV8VU3M3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -312,6 +349,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XVTV8VU3M3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

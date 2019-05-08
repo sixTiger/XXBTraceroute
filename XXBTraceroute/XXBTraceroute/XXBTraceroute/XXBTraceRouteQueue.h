@@ -14,7 +14,14 @@
     XXBTracerouteUtil   *_tracerouteUtil;
 }
 
-- (void)inTransaction:(void (^)(XXBTracerouteUtil *tracerouteUtil))block;
++ (instancetype)traceRouteQueue;
+
+/**
+ 开始网络诊断
+
+ @param block 网络诊断的回调
+ */
+- (void)inTraceRoute:(void (^)(XXBTracerouteUtil *tracerouteUtil))block;
 
 @end
 

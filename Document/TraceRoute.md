@@ -6,10 +6,7 @@
 
 
 ### 路由诊断原理
-<center>
-	<img src="Images/traceroute_01.png" width="800">
-</center>
-
+>路由诊断的目的是为了知道从终端到服务器的链路个各个节点的信息<br>
 >“Traceroute程序发送一份UDP数据报给目的主机，但它选择一个不可能的值作为UDP端口
 号（大于30 000），使目的主机的任何一个应用程序都不可能使用该端口。因为，当该数据报
 到达时，将使目的主机的UDP模块产生一份“端口不可达”错误的ICMP报文。
@@ -17,8 +14,12 @@
 什么时候结束。”
 中间的路由器是因为TTL=0以后返回ICMP 类型11，代码0的超时消息。
 目的IP到了以后，拆包分析UDP内容，发现端口不可达，返回ICMP类型3，代码3（目标端口不可达）实现。
-在windws主机里面的tracert和TCP/IP详解的表述有点出入。windows主机的tracert是直接是用ping来实现的，但是这个ping的TTL值在3个包后增大1，不可达或者超时后返回星号，继续下一个TTL的包的发送，一直到达默认设置的30跳。一般在路由器和交换机上的traceroute都是UDP的方式，每个TTL发的包的个数和最大跳数、UDP开始端口都是可以调整的。<br>
->路由诊断的目的是为了知道从终端到服务器的链路个各个节点的信息
+在windws主机里面的tracert和TCP/IP详解的表述有点出入。windows主机的tracert是直接是用ping来实现的，但是这个ping的TTL值在3个包后增大1，不可达或者超时后返回星号，继续下一个TTL的包的发送，一直到达默认设置的30跳。一般在路由器和交换机上的traceroute都是UDP的方式，每个TTL发的包的个数和最大跳数、UDP开始端口都是可以调整的。
+
+<center>
+	<img src="Images/traceroute_01.png" width="800">
+</center>
+
 
 ### 路由诊断示例
 >下边是一个网络诊断的信息（使用的是MAC自带的 网络实用工具）
@@ -39,9 +40,9 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 ```
 
 ### 路由诊断实现方案
->路由诊断有两种实现方案,一种是居于UDP方案实现的，一种是基于ICMP（Internet Control Message Protocol）实现的。
+>路由诊断有两种实现方案,一种是基于UDP方案实现的，一种是基于ICMP（Internet Control Message Protocol）实现的。
 
-### 一、基于UDP包
+### 一、基于UDP实现
 <center>
 	<img src="Images/traceroute_02.png" width="800">
 </center>

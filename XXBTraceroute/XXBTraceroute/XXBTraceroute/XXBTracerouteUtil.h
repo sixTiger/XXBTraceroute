@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "XXBTracerouteContext.h"
 
 @interface XXBTracerouteUtil : NSObject
 
-@end
+/**
+ 当前网络诊断的上下文信息
+ */
+@property(nonatomic, strong, readonly) XXBTracerouteContext    *tracerouteContext;
 
-NS_ASSUME_NONNULL_END
+/**
+ 开始路由诊断
+
+ @param tracerouteContext 诊断的context
+ */
+- (void)startTracerouteWithContext:(XXBTracerouteContext *)tracerouteContext;
+@end

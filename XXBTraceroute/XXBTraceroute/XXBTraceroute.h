@@ -10,4 +10,8 @@
 
 FOUNDATION_EXPORT const NSString *XXBTracerouteVersionString;
 
+#import "XXBTraceRouteQueue.h"
+#import "XXBTracerouteUtil.h"
+
+
 
