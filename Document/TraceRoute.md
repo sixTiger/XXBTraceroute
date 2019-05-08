@@ -74,6 +74,7 @@ traceroute to weibo.com (123.125.104.197), 64 hops max, 72 byte packets
 > [ICMP6简介](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6)<br>
 > [ICMP文档](https://tools.ietf.org/html/rfc2463)<br>
 > [LDNetDiagnoService](https://github.com/Lede-Inc/LDNetDiagnoService_IOS).
+> [samplecode_SimplePing](https://developer.apple.com/library/archive/samplecode/SimplePing/Introduction/Intro.html)
 
 
  
@@ -85,3 +86,6 @@ traceroute weibo.com
 ```c
 ip.dst == 123.125.29.208
 ```
+
+### 五、附录
+>使用到的抓包工具 `Wireshark`
