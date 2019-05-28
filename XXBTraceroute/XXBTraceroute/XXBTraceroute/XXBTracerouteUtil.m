@@ -147,6 +147,10 @@
     timeout.tv_usec = 0;
     setsockopt(send_sock, SOL_SOCKET, SO_RCVTIMEO, (char *)&timeout, sizeof(timeout));
     
+    //后台发送的情况下不 SIGPIPE 信号
+    int value = 1;
+    setsockopt(send_sock, SOL_SOCKET, SO_NOSIGPIPE, &value, sizeof(value));
+    
     int ttl = 1;
     BOOL succeed = NO;
     do {
